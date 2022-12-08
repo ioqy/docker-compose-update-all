@@ -29,6 +29,6 @@ sudo curl https://raw.githubusercontent.com/ioqy/docker-compose-update-all/maste
 sudo chmod a+rx /usr/local/bin/docker-compose-update-all.sh
 ```
 
-## Exclude docker-compose file from update
+## Exclude a docker-compose file from update
 
 To exclude a `docker-compose.yml` file from the automatic update add a file with the name `.dockerupdateignore` to the directory.
