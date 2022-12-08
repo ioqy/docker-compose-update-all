@@ -28,3 +28,7 @@ docker image prune --force > /dev/null 2>&1
 sudo curl https://raw.githubusercontent.com/ioqy/docker-compose-update-all/master/docker-compose-update-all.sh -o /usr/local/bin/docker-compose-update-all.sh
 sudo chmod a+rx /usr/local/bin/docker-compose-update-all.sh
 ```
+
+## Exclude docker-compose file from update
+
+To exclude a `docker-compose.yml` file from the automatic update add a file with the name `.dockerupdateignore` to the directory.
