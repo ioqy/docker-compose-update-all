@@ -1,6 +1,6 @@
 # A bash script to update all running docker compose containers to their newest available image
 
-Executes `docker pull` and `docker up -d` for all running docker-compose files.
+Executes `docker pull` and `docker compose up -d` for all running docker-compose files.
 
 ## Usage
 
@@ -9,17 +9,6 @@ To manually update your docker-compose containers call `docker-compose-update-al
 To automatically update add the following command as a cron job:
 ```bash
 /usr/local/bin/docker-compose-update-all.sh > /dev/null 2>&1
-```
-
-The script does not prune the old images.
-
-To prune unused images after an update either run
-```
-docker image prune --force
-```
-or add the following command as a seperate cron job:
-```
-docker image prune --force > /dev/null 2>&1
 ```
 
 ## Installation
